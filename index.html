@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width,
+                       initial-scale=1.0,
+                       user-scalable=yes">
+
+        <title>Art Gallery</title>
+
+        <style>
+         body{
+             text-align: left;
+             background: #eee;
+         }
+        </style>
+
+        <script type="text/javascript" src="gl-matrix-min.js"></script>
+    </head>
+
+    <body onload="start()">
+        <center>
+        <header>
+            <h1 class="title">Art Gallery: a NP-hard game</h1>
+        </header>
+    </center>
+        <div>
+            <p>
+                The <i>Art Gallery game</i> is based on a <a href="https://en.wikipedia.org/wiki/Art_gallery_problem">NP-hard problem in computational geometry.</a><br />
+            </p>
+
+            <p><i>Your Goal</i>: to cover the art gallery (the white area in the rectangle) with the least amount of guards possible!</p>
+            <p><b>To move a guard</b>: click on the guard, then move the mouse to the desired position. Click the mouse again to stop moving the guard.</p>
+            <p><b>To move a guard's field of view</b>: click on the guard, then move the mouse while pressing the Shift key.</p>
+
+            <p><b>To add a new guard:</b> click the 'Add a guard !' button.</p>
+            <p><b>To check if the gallery is covered:</b> click the 'Check if the gallery is covered.' button. The area that is not covered by any guard's field of view will be illuminated.</p>
+            <center>
+            
+            
+            <input id="clickMe" type="button" value="Add a guard !" onclick="addguard();" />
+            <input id="gameo" type="button" value="Check if the gallery is covered." onclick="checkGameO();" />
+            <!-- <input id="displaygallery" type="button" value="Reset to a blank gallery." onclick="displayGallery();" /> -->
+            <p>
+                <canvas id="canvas2d" width="640" height="480" />
+            </p>
+        </center>
+        </div>
+    </body>
+
+</html>
+
+
+
+<script src = 'artgallery-app.js' type="text/javascript">
+ "use strict";
+
+ 
+
+</script>
+
